@@ -20,6 +20,40 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035); }
 
+.light-link-custom {
+  color: #d4d4d4;
+  transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  -ms-transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1); }
+  .light-link-custom:hover {
+    color: #cece04; }
+
+.dark-link-custom {
+  color: #242424;
+  transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  -ms-transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1); }
+  .dark-link-custom:hover {
+    color: #cece04; }
+
+.colored-underline {
+  position: relative; }
+  .colored-underline::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 2px !important;
+    background-color: rgba(240, 76, 0, 0.938);
+    bottom: -5px;
+    right: 0; }
+
+.text-justifyed {
+  text-align: justify; }
+
 @keyframes fall {
   0%, 20%, 40%, 60%, 80%, 100% {
     bottom: 10px; }
@@ -42,3 +76,35 @@ body {
     left: 0;
     width: 100%;
     height: 100%; }
+
+#our_services .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(32, 32, 32, 0.589);
+  transition: all 350ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -webkit-transition: all 350ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -moz-transition: all 350ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -ms-transition: all 350ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -o-transition: all 350ms cubic-bezier(0.895, 0.03, 0.685, 0.22); }
+
+#our_services .position-relative:hover .overlay {
+  left: -100%; }
+
+#best_works .overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(32, 32, 32, 0.589);
+  transition: all 350ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -webkit-transition: all 350ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -moz-transition: all 350ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -ms-transition: all 350ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -o-transition: all 350ms cubic-bezier(0.895, 0.03, 0.685, 0.22); }
+
+#best_works .position-relative:hover .overlay {
+  left: 0; }
